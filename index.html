@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+        // Program-1
+
+       for(i=1;i<21;i++)
+       {
+        if(i%3==0 && i%5==0)
+       {
+        console.log("FizzBuzz");
+       }
+       else if(i%3==0)
+       {
+        console.log("Fizz");
+       }
+       else if(i%5==0)
+       {
+        console.log("Buzz");
+       }
+       else
+       {
+        console.log(i);
+       }
+       }
+
+        // Program-2
+
+        let inpu="naker";
+        let inpu_arr=inpu.split(" ");
+        let upni=inpu_arr.reverse();
+        if(inpu_arr==upni)
+         {
+        console.log(inpu+" is Palindrome");
+         }
+
+        // Program-3
+
+        let arr=[5,8,2,9,1];
+        let lar=arr[0];
+        for(i=1;i<arr.length;i++)
+       {
+        if(arr[i]>lar)
+       {
+        lar=arr[i];
+       }
+       }
+       console.log("Largest Number in the Array : "+lar);
+    
+       // Program-4
+
+       let str4="praveen kumar";
+       let arr4=str4.split(' ');
+       fir=arr4[0];
+       for(i=0;i<arr4.length;i++)
+       {
+       for(j=1;j<arr4.length;j++)
+       {
+        let coun=0;
+       if(arr4[i]==arr4[j])
+       {
+        coun++;
+        arr4.splice(0,j);
+       }
+       }
+       }
+       console.log(arr4);
+
+       // Program-5
+
+       let str5="this is to find the longest word";
+       let arr5=str5.split(' ');
+       let lon=arr5[0];
+       let lonval=arr5[0]
+       for(i=1;i<arr5.length;i++)
+       {
+        if(lon.length>arr5[i].length)
+       {
+        lon=arr5[i];
+       }
+       }
+       console.log("Longest word : "+lon);
+
+
+       // Program-6
+
+       let inp=5;
+       let fact=1;
+       for(i=1;i<=inp;i++)
+       {
+        fact=i*fact;
+       }
+       console.log("Factorial of "+inp+" : "+fact);
+
+        // Program-7
+
+        let cels=100;
+        console.log("Celsius : "+cels+" degree");
+        let fah=cels+273;
+        console.log("Fahrenheit : "+fah+" F");
+
+        // Program-8
+
+        let arr8=[1,2,3,4,6,7,8,9];
+        let mis=0;
+        for(i=1;i<=arr8.length;i++)
+       {
+        if(i !== arr8[i-1])
+            {
+                mis=i;
+                break;
+            }
+       }
+       console.log(mis);
+
+    </script>
+
+
+</body>
+</html>
